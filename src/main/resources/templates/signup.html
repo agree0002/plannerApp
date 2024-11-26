@@ -56,6 +56,10 @@
 </head>
 <body>
 <form action="/addUserStatus" method="post">
+    <div th:if="${errorMessage}" class="error-message">
+        <p th:text="${errorMessage}"></p>
+    </div>
+
     <label for="username">유저네임</label>
     <input id="username" name="username" type="text" placeholder="유저네임 입력" required>
 

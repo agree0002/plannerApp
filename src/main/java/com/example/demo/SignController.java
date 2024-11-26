@@ -24,13 +24,22 @@ public class SignController {
     @PostMapping("/addUserStatus")
     String addUserStatus(@RequestParam(name = "username")
                          String username, @RequestParam(name = "email")
-                         String email, @RequestParam(name = "password") String password) {
+                         String email, @RequestParam(name = "password") String password,
+                         @RequestParam(name ="confirmPassword") String confirmPassword, Model model) {
         User user = new User();
         user.setUsername(username);
         user.setEmail(email);
         user.setPassword(password);
-        System.out.println(user.getUsername() + user.getEmail() + user.getPassword());
-        userRepository.save(user);
-        return "redirect:/signup";
+
+        if (!confirmPassword.equals(password)) {
+            model.addAttribute("errorMessage", "비밀번호가 일치하지 않습니다.");
+            return "signup.html";
+        }
+        else {
+            userRepository.save(user);
+            return "index.html";
+
+        }
+
     }
 }
