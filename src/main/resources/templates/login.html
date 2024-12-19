@@ -79,7 +79,10 @@
 <body>
 <div class="login-container">
     <h2>로그인</h2>
-    <form action="/login" method="POST">
+    <form action="/login-check" method="POST">
+        <div th:if="${errorMessage}" class="error-message">
+            <p th:text="${errorMessage}"></p>
+        </div>
         <input type="email" name="email" class="input-field" placeholder="이메일" required>
         <input type="password" name="password" class="input-field" placeholder="비밀번호" required>
         <button type="submit" class="login-button">로그인</button>

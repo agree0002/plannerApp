@@ -36,9 +36,14 @@ public class SignController {
             return "signup.html";
         }
         else {
-            userRepository.save(user);
-            return "index.html";
-
+            try {
+                userRepository.save(user);
+                return "index.html";
+            }
+            catch (Exception e) {
+                model.addAttribute("errorMessage", "유저네임이나 이메일이 중복됩니다.");
+                return "signup.html";
+            }
         }
 
     }
