@@ -17,7 +17,9 @@ public class LoginCheckController {
     public String login(@RequestParam String email, @RequestParam String password, Model model, HttpSession session) {
         try{
             if (userService.authenticateUser(email, password)) {
-                session.setAttribute("user", email);
+                int userId = userService.getUserId(email);
+                session.setAttribute("user_index", userId);
+                System.out.println(1111);
                 return "redirect:/home";
             } else {
                 model.addAttribute("errorMessage", "이메일이나 비밀번호가 다릅니다.");

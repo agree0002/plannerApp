@@ -18,4 +18,9 @@ public class UserService {
         User user = findUserByEmail(email);
         return user.getPassword().equals(password); // 실제로는 암호화된 비밀번호를 검증해야 함
     }
+
+    public Integer getUserId(String email) {
+        User user = findUserByEmail(email);
+        return user.getUser_id();
+    }
 }
