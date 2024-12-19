@@ -10,7 +10,7 @@ public class HomeController {
     @GetMapping("/home")
     public String home(HttpSession session) {
         // 세션에서 사용자 정보 확인
-        if (session.getAttribute("user") == null) {
+        if (session.getAttribute("user_index") == null) {
             return "redirect:/login"; // 로그인되지 않은 경우 로그인 페이지로 리다이렉트
         }
 
