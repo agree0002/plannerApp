@@ -58,7 +58,7 @@ public class ScheduleController {
 
     @PostMapping("/schedules")
     public String returnHome() {
-        return "redirect:/";
+        return "redirect:/home";
     }
 }
 
