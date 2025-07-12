@@ -1,0 +1,33 @@
+# Git 관련
+.git
+.gitignore
+
+# IDE 설정 파일
+*.iml
+.idea/
+.vscode/
+
+# OS 및 로그 파일
+*.log
+*.DS_Store
+Thumbs.db
+
+# 빌드 결과물 중 불필요한 항목
+build/
+# COPY할 jar 파일은 포함
+!build/libs/*.jar
+
+# 테스트 리포트 등
+target/
+out/
+test-output/
+reports/
+build/tmp/
+build/test-results/
+build/reports/
+
+# 환경 변수 및 민감 정보
+.env
+*.pem
+*.key
+*.crt
