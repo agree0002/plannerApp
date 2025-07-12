@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.igrus.demo.demo;
 
 import jakarta.persistence.*;
 import lombok.Getter;

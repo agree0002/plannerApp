@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.igrus.demo.demo.controller;
 
 public class ScheduleForm {
 

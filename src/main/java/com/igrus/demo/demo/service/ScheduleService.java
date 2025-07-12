@@ -1,9 +1,8 @@
-package com.example.demo.service;
+package com.igrus.demo.demo.service;
 
-import com.example.demo.domain.Schedule;
-import com.example.demo.repository.ScheduleRepository;
+import com.igrus.demo.demo.domain.Schedule;
+import com.igrus.demo.demo.repository.ScheduleRepository;
 import jakarta.transaction.Transactional;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 

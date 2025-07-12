@@ -1,8 +1,8 @@
-package com.example.demo.controller;
+package com.igrus.demo.demo.controller;
 
-import com.example.demo.domain.Schedule;
-import com.example.demo.repository.ScheduleRepository;
-import com.example.demo.service.ScheduleService;
+import com.igrus.demo.demo.domain.Schedule;
+import com.igrus.demo.demo.repository.ScheduleRepository;
+import com.igrus.demo.demo.service.ScheduleService;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
