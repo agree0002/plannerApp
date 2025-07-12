@@ -1,4 +1,4 @@
-package com.example.demo.domain;
+package com.igrus.demo.demo.domain;
 
 import jakarta.persistence.*;
 

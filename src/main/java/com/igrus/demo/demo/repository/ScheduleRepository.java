@@ -1,8 +1,7 @@
-package com.example.demo.repository;
+package com.igrus.demo.demo.repository;
 
 
-import com.example.demo.domain.Schedule;
-import org.springframework.stereotype.Repository;
+import com.igrus.demo.demo.domain.Schedule;
 
 import java.util.List;
 
