@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: Planner
+
+  profiles:
+    active: local
+
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
