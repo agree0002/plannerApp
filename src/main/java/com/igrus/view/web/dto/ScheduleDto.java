@@ -1,6 +1,6 @@
-package com.igrus.demo.demo.controller;
+package com.igrus.view.web.dto;
 
-public class ScheduleForm {
+public class ScheduleDto {
 
     private String date;
     private String task;

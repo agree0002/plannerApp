@@ -1,4 +1,4 @@
-package com.igrus.demo.demo;
+package com.igrus.view.web.controller;
 
 import jakarta.servlet.http.HttpSession;
 import org.springframework.stereotype.Controller;

@@ -1,5 +1,7 @@
-package com.igrus.demo.demo;
+package com.igrus.view.web.controller;
 
+import com.igrus.view.domain.user.User;
+import com.igrus.view.domain.user.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

@@ -1,4 +1,4 @@
-package com.igrus.demo.demo;
+package com.igrus.view.web.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

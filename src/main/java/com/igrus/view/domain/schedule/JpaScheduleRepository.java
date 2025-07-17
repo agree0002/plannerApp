@@ -1,6 +1,5 @@
-package com.igrus.demo.demo.repository;
+package com.igrus.view.domain.schedule;
 
-import com.igrus.demo.demo.domain.Schedule;
 import jakarta.persistence.EntityManager;
 import org.springframework.stereotype.Repository;
 

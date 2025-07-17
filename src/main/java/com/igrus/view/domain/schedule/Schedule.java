@@ -1,4 +1,4 @@
-package com.igrus.demo.demo.domain;
+package com.igrus.view.domain.schedule;
 
 import jakarta.persistence.*;
 

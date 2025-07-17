@@ -1,5 +1,6 @@
-package com.igrus.demo.demo;
+package com.igrus.view.web.controller;
 
+import com.igrus.view.domain.user.UserService;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

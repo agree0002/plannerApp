@@ -1,8 +1,9 @@
-package com.igrus.demo.demo.controller;
+package com.igrus.view.web.controller;
 
-import com.igrus.demo.demo.domain.Schedule;
-import com.igrus.demo.demo.repository.ScheduleRepository;
-import com.igrus.demo.demo.service.ScheduleService;
+import com.igrus.view.web.dto.ScheduleDto;
+import com.igrus.view.domain.schedule.Schedule;
+import com.igrus.view.domain.schedule.ScheduleRepository;
+import com.igrus.view.domain.schedule.ScheduleService;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -32,7 +33,7 @@ public class ScheduleController {
     }
 
     @PostMapping(value = "/schedules/new")
-    public String create(ScheduleForm form, @ModelAttribute("user_index") int index) {
+    public String create(ScheduleDto form, @ModelAttribute("user_index") int index) {
         Schedule schedule = new Schedule();
         schedule.setDate(form.getDate());
         schedule.setTask(form.getTask());
@@ -42,7 +43,7 @@ public class ScheduleController {
     }
 
     @PostMapping(value = "/schedules/delete")
-    public String delete(ScheduleForm form) {
+    public String delete(ScheduleDto form) {
         Schedule schedule = new Schedule();
         schedule.setSchedule_index(form.getSchedule_index());
         scheduleService.deleteSchedule(schedule.getSchedule_index());

@@ -1,7 +1,5 @@
-package com.igrus.demo.demo.service;
+package com.igrus.view.domain.schedule;
 
-import com.igrus.demo.demo.domain.Schedule;
-import com.igrus.demo.demo.repository.ScheduleRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 
